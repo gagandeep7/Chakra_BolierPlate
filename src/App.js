@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button, Box, useColorMode, Text } from "@chakra-ui/core";
 
-function App() {
+// function ColorModeExample() {
+//   const { colorMode, toggleColorMode } = useColorMode();
+//   return (
+//     <header>
+//       <Button onClick={toggleColorMode}>
+//         Toggle {colorMode === "light" ? "Dark" : "Light"}
+//       </Button>
+
+//       <Text color="brand.900">Hello world</Text>
+//     </header>
+//   );
+// }
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {" "}
+      <Box
+        as="h1"
+        fontSize="6xl"
+        marginX="auto"
+        maxW="400px"
+        mt="2rem"
+        color="blue.400"
+      >
+        Hello World
+      </Box>
+    </>
   );
-}
+};
 
 export default App;
